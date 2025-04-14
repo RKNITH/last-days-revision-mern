@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div id="quiz">
+            <h1>General Knowledge Quiz</h1>
+            <div id="question-container">
+                <p id="question"></p>
+                <div id="options">
+                    <button class="option-btn" onclick="nextQuestion(0)">Option 1</button>
+                    <button class="option-btn" onclick="nextQuestion(1)">Option 2</button>
+                    <button class="option-btn" onclick="nextQuestion(2)">Option 3</button>
+                    <button class="option-btn" onclick="nextQuestion(3)">Option 4</button>
+                </div>
+            </div>
+            <button id="next-btn" onclick="loadNextQuestion()">Next Question</button>
+        </div>
+        <div id="result" class="hidden">
+            <h2>Your Score: <span id="score"></span></h2>
+            <button onclick="restartQuiz()">Restart Quiz</button>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
